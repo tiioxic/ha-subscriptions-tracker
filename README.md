@@ -24,7 +24,8 @@ ha-subscriptions-tracker/
 │       ├── __init__.py
 │       ├── sensor.py
 │       ├── const.py
-│       └── manifest.json
+│       ├── manifest.json
+│       └── services.yaml
 └── www/
     └── subscriptions-card.js
 ```

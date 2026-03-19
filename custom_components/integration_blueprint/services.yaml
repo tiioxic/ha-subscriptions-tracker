@@ -1,0 +1,58 @@
+add_subscription:
+  name: Ajouter un abonnement
+  description: Ajoute un nouvel abonnement
+  fields:
+    name:
+      required: true
+      selector:
+        text:
+    amount:
+      required: true
+      selector:
+        number:
+          mode: box
+    next_payment:
+      required: true
+      selector:
+        date:
+    billing_cycle:
+      selector:
+        select:
+          options: ["monthly", "yearly", "weekly"]
+    category:
+      selector:
+        text:
+    color:
+      selector:
+        color_rgb:
+    url:
+      selector:
+        text:
+    note:
+      selector:
+        text:
+
+update_subscription:
+  name: Modifier un abonnement
+  description: Modifie un abonnement existant par son nom
+  fields:
+    name:
+      required: true
+      selector:
+        text:
+    amount:
+      selector:
+        number:
+          mode: box
+    next_payment:
+      selector:
+        date:
+
+remove_subscription:
+  name: Supprimer un abonnement
+  description: Supprime un abonnement par son nom
+  fields:
+    name:
+      required: true
+      selector:
+        text:

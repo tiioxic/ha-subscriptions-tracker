@@ -23,6 +23,7 @@ from urllib.parse import urlparse
 import requests
 
 from homeassistant.core import HomeAssistant, ServiceCall
+from homeassistant.helpers import discovery
 from homeassistant.helpers.typing import ConfigType
 
 from .const import (
@@ -292,7 +293,7 @@ def setup(hass: HomeAssistant, config: ConfigType) -> bool:
     ).start()
 
     # Chargement de la plateforme sensor
-    hass.helpers.discovery.load_platform("sensor", DOMAIN, {}, config)
+    discovery.load_platform(hass, "sensor", DOMAIN, {}, config)
 
     _LOGGER.info(
         "Subscriptions Tracker initialisé — %d abonnement(s) chargés",

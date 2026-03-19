@@ -36,7 +36,7 @@ ha-subscriptions-tracker/
 ### Via HACS (méthode recommandée)
 
 1. HACS → ⋮ → **Custom repositories**
-2. URL : `https://github.com/TON_USERNAME/ha-subscriptions-tracker`
+2. URL : `https://github.com/tiioxic/ha-subscriptions-tracker`
 3. Type : **Integration**
 4. Installer **Subscriptions Tracker**
 5. Redémarrer Home Assistant
